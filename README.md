@@ -1,7 +1,7 @@
 <h1>Reactive Spring Template</h1>
 
-![ricardocosta](https://circleci.com/gh/ricardocosta/reactive-spring-template.svg?style=shield)
-![codecov](https://codecov.io/gh/ricardocosta/reactive-spring-template/branch/main/graph/badge.svg?token=ON5465MRXB)
+![ricardocosta](https://circleci.com/gh/ricardocosta/bank-api.svg?style=shield)
+![codecov](https://codecov.io/gh/ricardocosta/bank-api/branch/main/graph/badge.svg?token=ON5465MRXB)
 
 Template for a reactive Spring Boot application.
 
