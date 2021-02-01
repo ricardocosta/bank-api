@@ -1,6 +1,7 @@
 spring:
   application.name: BankAPI
   main.banner-mode: OFF
+  profiles.active: development
   r2dbc:
     username:
     password:
@@ -16,7 +17,7 @@ spring:
 logging.level:
   root: WARN
   org.springframework: WARN
-  com.ricardocosta.api.bank: DEBUG
+  com.ricardocosta.api.bank: INFO
 springdoc:
   swagger-ui:
     defaultModelsExpandDepth: -1
@@ -25,4 +26,4 @@ springdoc:
     tagsSorter: alpha
   default-produces-media-type: application/json
   show-actuator: true
-blockhound.active: true
+blockhound.active: false
