@@ -1,6 +1,6 @@
-package com.ricardocosta.template.exceptions
+package com.ricardocosta.api.bank.exceptions
 
-import com.ricardocosta.template.dto.ErrorDTO
+import com.ricardocosta.api.bank.dto.ErrorDTO
 import io.swagger.v3.oas.annotations.media.Content
 import io.swagger.v3.oas.annotations.media.ExampleObject
 import io.swagger.v3.oas.annotations.media.Schema
@@ -32,7 +32,7 @@ class ExceptionHandlers {
             Content(
                 schema = Schema(implementation = ErrorDTO::class),
                 examples = [
-                    ExampleObject("{\"code\": \"${NOT_IMPLEMENTED_CODE}\", \"message\": \"${NOT_IMPLEMENTED_MSG}\"}"),
+                    ExampleObject("{\"code\": \"$NOT_IMPLEMENTED_CODE\", \"message\": \"$NOT_IMPLEMENTED_MSG\"}"),
                 ]
             )
         ]
@@ -53,7 +53,7 @@ class ExceptionHandlers {
             Content(
                 schema = Schema(implementation = ErrorDTO::class),
                 examples = [
-                    ExampleObject("{\"code\": \"${UNEXPECTED_CODE}\", \"message\": \"${UNEXPECTED_MSG}\"}"),
+                    ExampleObject("{\"code\": \"$UNEXPECTED_CODE\", \"message\": \"$UNEXPECTED_MSG\"}"),
                 ]
             )
         ]

@@ -1,5 +1,5 @@
 spring:
-  application.name: TemplateApplication
+  application.name: BankAPI
   profiles.active: test
   main.banner-mode: OFF
   r2dbc:
@@ -14,5 +14,5 @@ spring:
 logging.level:
   root: WARN
   org.springframework: WARN
-  com.ricardocosta.template: DEBUG
+  com.ricardocosta.api.bank: DEBUG
 blockhound.active: false

@@ -1,4 +1,4 @@
-package com.ricardocosta.template.configuration
+package com.ricardocosta.api.bank.configuration
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition
 import io.swagger.v3.oas.annotations.info.Info
@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component
 @Component
 @OpenAPIDefinition(
     info = Info(
-        title = "Template API",
+        title = "Bank API",
         version = "1.0",
-        description = "API documentation for Template Application."
+        description = "API documentation for Bank application."
     ),
     servers = [
         Server(url = "http://localhost:8080", description = "localhost")

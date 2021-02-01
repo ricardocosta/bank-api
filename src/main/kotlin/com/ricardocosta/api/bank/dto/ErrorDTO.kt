@@ -1,4 +1,4 @@
-package com.ricardocosta.template.dto
+package com.ricardocosta.api.bank.dto
 
 data class ErrorDTO(
     val code: String,

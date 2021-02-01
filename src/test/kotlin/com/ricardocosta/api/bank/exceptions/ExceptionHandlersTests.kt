@@ -1,6 +1,6 @@
-package com.ricardocosta.template.exceptions
+package com.ricardocosta.api.bank.exceptions
 
-import com.ricardocosta.template.dto.ErrorDTO
+import com.ricardocosta.api.bank.dto.ErrorDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

@@ -1,10 +1,10 @@
-package com.ricardocosta.template
+package com.ricardocosta.api.bank
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class TemplateApplicationTests {
+class BankAPIApplicationTests {
 
     @Test
     fun contextLoads() {

@@ -1,14 +1,14 @@
-package com.ricardocosta.template
+package com.ricardocosta.api.bank
 
-import com.ricardocosta.template.listeners.BlockHoundRegisterListener
+import com.ricardocosta.api.bank.listeners.BlockHoundRegisterListener
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class TemplateApplication
+class BankAPIApplication
 
 fun main(vararg args: String) {
-    runApplication<TemplateApplication>(*args) {
+    runApplication<BankAPIApplication>(*args) {
         addListeners(BlockHoundRegisterListener())
     }
 }

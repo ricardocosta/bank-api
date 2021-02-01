@@ -1,5 +1,5 @@
 spring:
-  application.name: TemplateApplication
+  application.name: BankAPI
   main.banner-mode: OFF
   r2dbc:
     username:
@@ -16,7 +16,7 @@ spring:
 logging.level:
   root: WARN
   org.springframework: WARN
-  com.ricardocosta.template: DEBUG
+  com.ricardocosta.api.bank: DEBUG
 springdoc:
   swagger-ui:
     defaultModelsExpandDepth: -1

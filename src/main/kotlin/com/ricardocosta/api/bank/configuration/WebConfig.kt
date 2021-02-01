@@ -1,4 +1,4 @@
-package com.ricardocosta.template.configuration
+package com.ricardocosta.api.bank.configuration
 
 import org.springframework.context.annotation.Configuration
 import org.springframework.data.web.ReactivePageableHandlerMethodArgumentResolver

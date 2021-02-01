@@ -1,6 +1,6 @@
-package com.ricardocosta.template.controllers
+package com.ricardocosta.api.bank.controllers
 
-import com.ricardocosta.template.dto.HelloDTO
+import com.ricardocosta.api.bank.dto.HelloDTO
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
