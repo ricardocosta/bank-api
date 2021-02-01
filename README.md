@@ -1,9 +1,9 @@
-<h1>Reactive Spring Template</h1>
+<h1>Bank API</h1>
 
 ![ricardocosta](https://circleci.com/gh/ricardocosta/bank-api.svg?style=shield)
 ![codecov](https://codecov.io/gh/ricardocosta/bank-api/branch/main/graph/badge.svg?token=ON5465MRXB)
 
-Template for a reactive Spring Boot application.
+API for Bank app.
 
 ## 🔌 Running
 
@@ -24,7 +24,7 @@ The application will be available at http://localhost:8080.
 
 ### IntelliJ
 
-To run in IntelliJ, just run the `main` method in the `TemplateApplication` class.
+To run in IntelliJ, just run the `main` method in the `BankAPIApplication` class.
 
 Be reminded that you may have to modify the Run Configuration in order to add environment variables that are not defined
 in the `application.yml` file.

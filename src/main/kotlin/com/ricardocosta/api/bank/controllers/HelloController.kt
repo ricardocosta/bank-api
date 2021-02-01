@@ -1,6 +1,6 @@
-package com.ricardocosta.template.controllers
+package com.ricardocosta.api.bank.controllers
 
-import com.ricardocosta.template.dto.HelloDTO
+import com.ricardocosta.api.bank.dto.HelloDTO
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.tags.Tag

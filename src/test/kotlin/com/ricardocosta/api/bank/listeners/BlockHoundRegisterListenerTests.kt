@@ -1,4 +1,4 @@
-package com.ricardocosta.template.listeners
+package com.ricardocosta.api.bank.listeners
 
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.times

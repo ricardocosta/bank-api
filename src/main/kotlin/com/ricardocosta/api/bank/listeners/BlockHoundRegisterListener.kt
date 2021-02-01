@@ -1,4 +1,4 @@
-package com.ricardocosta.template.listeners
+package com.ricardocosta.api.bank.listeners
 
 import mu.KotlinLogging
 import org.springframework.boot.context.event.ApplicationContextInitializedEvent

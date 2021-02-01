@@ -85,8 +85,8 @@ dependencies {
 }
 
 changelog {
-    appName = "Template Application"
-    repoUrl = "https://github.com/ricardocosta/reactive-spring-template"
+    appName = "Bank API"
+    repoUrl = "https://github.com/ricardocosta/bank-api"
     match = "^fix|^feat|^chore|^perf|^refactor|BREAKING"
 }
 
@@ -146,7 +146,7 @@ tasks.test {
 }
 
 val jacocoExclusions = listOf(
-    "com/ricardocosta/template/TemplateApplication*",
+    "com/ricardocosta/api/bank/BankAPIApplication*",
     "**/*\$logger\$*.class"
 )
 
