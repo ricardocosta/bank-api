@@ -1,0 +1,18 @@
+spring:
+  application.name: TemplateApplication
+  profiles.active: test
+  main.banner-mode: OFF
+  r2dbc:
+    username:
+    password:
+    url: r2dbc:tc:postgresql://localhost:5432/app?TC_IMAGE_TAG=13.1
+    pool:
+      initial-size: 2
+      max-size: 25
+      max-life-time: 5
+  flyway.enabled: false
+logging.level:
+  root: WARN
+  org.springframework: WARN
+  com.ricardocosta.template: DEBUG
+blockhound.active: false

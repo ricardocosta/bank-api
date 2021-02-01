@@ -1,0 +1,28 @@
+spring:
+  application.name: TemplateApplication
+  main.banner-mode: OFF
+  r2dbc:
+    username:
+    password:
+    url:
+    pool:
+      initial-size: 2
+      max-size: 25
+      max-life-time: 5
+  flyway:
+    user:
+    password:
+    validate-migration-naming: true
+logging.level:
+  root: WARN
+  org.springframework: WARN
+  com.ricardocosta.template: DEBUG
+springdoc:
+  swagger-ui:
+    defaultModelsExpandDepth: -1
+    operationsSorter: alpha
+    path: /api.html
+    tagsSorter: alpha
+  default-produces-media-type: application/json
+  show-actuator: true
+blockhound.active: true
