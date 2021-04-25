@@ -28,7 +28,7 @@ plugins {
     id("org.springframework.boot") version "2.4.2"
     id("ru.netris.commitlint") version "1.4.1"
     kotlin("jvm") version "1.4.21-2"
-    kotlin("plugin.spring") version "1.4.21-2"
+    kotlin("plugin.spring") version "1.4.32"
     application
     jacoco
 }
