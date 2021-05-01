@@ -37,8 +37,8 @@ group = "com.ricardocosta"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
-application {
-    applicationDefaultJvmArgs = listOf("-XX:+AllowRedefinitionToAddDeleteMethods")
+tasks.getByName<org.springframework.boot.gradle.tasks.run.BootRun>("bootRun") {
+    jvmArgs = listOf("-XX:+AllowRedefinitionToAddDeleteMethods")
 }
 
 repositories {
