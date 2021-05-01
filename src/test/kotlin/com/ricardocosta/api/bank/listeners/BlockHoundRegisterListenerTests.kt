@@ -62,10 +62,7 @@ class BlockHoundRegisterListenerTests {
         ).with(any(ReactiveAdapterRegistry.SpringCoreBlockHoundIntegration::class.java))
 
         // Check if exclusions are setup
-        verify(blockHoundBuilderMock, times(1)).allowBlockingCallsInside(
-            "com.fasterxml.jackson.module.kotlin.KotlinNamesAnnotationIntrospector",
-            "findKotlinParameterName"
-        )
+        verify(blockHoundBuilderMock, times(1)).with(any(BankAPIBlockHoundIntegration::class.java))
 
         // Check if BlockHound is installed
         verify(blockHoundBuilderMock, times(1)).install()
@@ -95,5 +92,30 @@ class BlockHoundRegisterListenerTests {
         blockHoundMock.verifyNoInteractions()
 
         blockHoundMock.close()
+    }
+
+    @Test
+    fun `BankAPIBlockHoundIntegration adds BlockHound exclusions`() {
+        // Setup BlockHound Builder mock
+        val blockHoundBuilderMock = mock(BlockHound.Builder::class.java, RETURNS_SELF)
+
+        val subject = BankAPIBlockHoundIntegration()
+        subject.applyTo(blockHoundBuilderMock)
+
+        // Check if exclusions are setup
+        verify(blockHoundBuilderMock, times(1)).allowBlockingCallsInside(
+            "kotlin.reflect.jvm.internal.impl.builtins.jvm.JvmBuiltInsPackageFragmentProvider",
+            "findPackage"
+        )
+
+        verify(blockHoundBuilderMock, times(1)).allowBlockingCallsInside(
+            "org.hibernate.validator.resourceloading.PlatformResourceBundleLocator",
+            "getResourceBundle"
+        )
+
+        verify(blockHoundBuilderMock, times(1)).allowBlockingCallsInside(
+            "java.util.UUID",
+            "randomUUID"
+        )
     }
 }
