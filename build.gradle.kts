@@ -27,7 +27,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "10.1.0"
     id("org.springframework.boot") version "2.4.2"
     id("ru.netris.commitlint") version "1.4.1"
-    kotlin("jvm") version "1.4.21-2"
+    kotlin("jvm") version "1.5.21"
     kotlin("plugin.spring") version "1.4.21-2"
     application
     jacoco
