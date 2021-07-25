@@ -1,3 +1,5 @@
+@file:Suppress("EmptyFunctionBlock")
+
 package com.ricardocosta.api.bank
 
 import org.junit.jupiter.api.Test
