@@ -43,13 +43,7 @@ application {
 
 repositories {
     mavenCentral()
-    jcenter {
-        content {
-            // just allow to include kotlinx projects
-            // detekt needs 'kotlinx-html' for the html report
-            includeGroup("org.jetbrains.kotlinx")
-        }
-    }
+    maven(url = "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven")
 }
 
 dependencies {
@@ -111,7 +105,7 @@ githook {
 
 jacoco {
     toolVersion = "0.8.6"
-    reportsDir = file("$rootDir/coverage")
+    reportsDirectory.set(layout.projectDirectory.dir("coverage"))
 }
 
 tasks.withType<KotlinCompile> {
@@ -153,7 +147,7 @@ val jacocoExclusions = listOf(
 tasks.jacocoTestReport {
     dependsOn(tasks.test) // tests are required to run before generating the report
     reports {
-        xml.isEnabled = true
+        xml.required.set(true)
     }
 
     classDirectories.setFrom(
@@ -181,7 +175,7 @@ tasks.jacocoTestCoverageVerification {
 tasks.create<Delete>("cleanCoverage") {
     group = "build"
     delete = setOf(
-        file("$rootDir/coverage")
+        file(layout.projectDirectory.dir("coverage"))
     )
 }
 
