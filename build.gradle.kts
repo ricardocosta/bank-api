@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val flywayVersion by extra("7.3.1")
 val jacksonVersion by extra("2.12.4")
-val kotlinVersion by extra("1.4.21")
+val kotlinVersion by extra("1.5.21")
 val kotlinCoroutinesVersion by extra("1.4.2-native-mt")
 val kotlinLoggingVersion by extra("2.0.10")
 val mockitoKotlinVersion by extra("2.2.0")
