@@ -14,7 +14,7 @@ val reactorKotlinVersion by extra("1.1.1")
 val r2dbcPoolVersion by extra("0.8.5.RELEASE")
 val reactorBlockHoundVersion by extra("1.0.4.RELEASE")
 val reactorTestVersion by extra("3.4.1")
-val springBootVersion by extra("2.4.0")
+val springBootVersion by extra("2.5.3")
 val springDocVersion by extra("1.5.2")
 val testContainersVersion by extra("1.16.0")
 
@@ -25,7 +25,7 @@ plugins {
     id("io.gitlab.arturbosch.detekt") version "1.17.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("org.jlleitschuh.gradle.ktlint") version "10.1.0"
-    id("org.springframework.boot") version "2.4.2"
+    id("org.springframework.boot") version "2.5.3"
     id("ru.netris.commitlint") version "1.4.1"
     kotlin("jvm") version "1.5.21"
     kotlin("plugin.spring") version "1.5.21"
