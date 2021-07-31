@@ -16,7 +16,7 @@ val reactorBlockHoundVersion by extra("1.0.4.RELEASE")
 val reactorTestVersion by extra("3.4.1")
 val springBootVersion by extra("2.4.0")
 val springDocVersion by extra("1.5.2")
-val testContainersVersion by extra("1.15.1")
+val testContainersVersion by extra("1.16.0")
 
 plugins {
     id("com.geoffgranum.gradle-conventional-changelog") version "0.3.1"
