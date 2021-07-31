@@ -15,7 +15,7 @@ val r2dbcPoolVersion by extra("0.8.5.RELEASE")
 val reactorBlockHoundVersion by extra("1.0.4.RELEASE")
 val reactorTestVersion by extra("3.4.1")
 val springBootVersion by extra("2.5.3")
-val springDocVersion by extra("1.5.2")
+val springDocVersion by extra("1.5.10")
 val testContainersVersion by extra("1.16.0")
 
 plugins {
