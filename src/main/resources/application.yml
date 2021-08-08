@@ -11,9 +11,10 @@ spring:
       max-size: 25
       max-life-time: 5
   flyway:
+    locations: classpath:/db/migration
+    validate-migration-naming: true
     user:
     password:
-    validate-migration-naming: true
 logging.level:
   root: WARN
   org.springframework: WARN

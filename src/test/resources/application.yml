@@ -3,16 +3,18 @@ spring:
   profiles.active: test
   main.banner-mode: OFF
   r2dbc:
-    username:
-    password:
-    url: r2dbc:tc:postgresql://localhost:5432/app?TC_IMAGE_TAG=13.1
-    pool:
-      initial-size: 2
-      max-size: 25
-      max-life-time: 5
-  flyway.enabled: false
+    url: r2dbc:tc:postgresql:///bank?TC_IMAGE_TAG=13.3-alpine
+    username: bank_api
+  flyway:
+    locations: classpath:/db/migration
+    validate-migration-naming: true
 logging.level:
   root: WARN
-  org.springframework: WARN
+  com.github.dockerjava: WARN
   com.ricardocosta.api.bank: DEBUG
+  org.flywaydb: INFO
+  org.springframework: WARN
+  org.testcontainers: INFO
+  io.r2dbc.postgresql.QUERY: WARN
+  io.r2dbc.postgresql.PARAM: WARN
 blockhound.active: false
