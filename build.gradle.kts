@@ -25,7 +25,7 @@ plugins {
     id("io.gitlab.arturbosch.detekt") version "1.17.1"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("org.jlleitschuh.gradle.ktlint") version "10.1.0"
-    id("org.springframework.boot") version "2.5.3"
+    id("org.springframework.boot") version "2.5.7"
     id("ru.netris.commitlint") version "1.4.1"
     kotlin("jvm") version "1.5.21"
     kotlin("plugin.spring") version "1.5.21"
