@@ -8,9 +8,9 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.ArgumentMatchers.any
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mockito.RETURNS_SELF
-import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.mockStatic
+import org.mockito.Mockito.`when`
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.context.event.ApplicationContextInitializedEvent
 import org.springframework.context.support.GenericApplicationContext
