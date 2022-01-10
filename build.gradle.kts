@@ -20,7 +20,7 @@ val testContainersVersion by extra("1.16.0")
 
 plugins {
     id("com.geoffgranum.gradle-conventional-changelog") version "0.3.1"
-    id("com.github.ben-manes.versions") version "0.39.0"
+    id("com.github.ben-manes.versions") version "0.41.0"
     id("com.star-zero.gradle.githook") version "1.2.1"
     id("io.gitlab.arturbosch.detekt") version "1.19.0"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
