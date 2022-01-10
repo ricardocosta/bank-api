@@ -2,7 +2,7 @@ import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val flywayVersion by extra("7.12.0")
-val jacksonVersion by extra("2.12.4")
+val jacksonVersion by extra("2.13.1")
 val kotlinVersion by extra("1.5.21")
 val kotlinCoroutinesVersion by extra("1.5.1")
 val kotlinLoggingVersion by extra("2.0.10")
