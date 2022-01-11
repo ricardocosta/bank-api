@@ -14,7 +14,7 @@ val reactorKotlinVersion by extra("1.1.3")
 val r2dbcPoolVersion by extra("0.8.5.RELEASE")
 val reactorBlockHoundVersion by extra("1.0.6.RELEASE")
 val reactorTestVersion by extra("3.4.8")
-val springBootVersion by extra("2.5.3")
+val springBootVersion by extra("2.6.2")
 val springDocVersion by extra("1.5.10")
 val testContainersVersion by extra("1.16.0")
 
