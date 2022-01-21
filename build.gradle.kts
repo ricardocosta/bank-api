@@ -3,8 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val flywayVersion by extra("8.4.1")
 val jacksonVersion by extra("2.13.1")
-val kotlinVersion by extra("1.5.21")
-val kotlinCoroutinesVersion by extra("1.5.1")
+val kotlinVersion by extra("1.6.10")
+val kotlinCoroutinesVersion by extra("1.6.0")
 val kotlinLoggingVersion by extra("2.1.21")
 val mockitoKotlinVersion by extra("2.2.0")
 val mockitoVersion by extra("3.11.2")
