@@ -9,5 +9,7 @@ import org.springframework.context.annotation.Configuration
 class JacksonConfig {
 
     @Bean
-    fun objectMapper() = ObjectMapper().registerModule(KotlinModule())
+    fun objectMapper() = ObjectMapper().registerModule(
+        KotlinModule.Builder().build()
+    )
 }
