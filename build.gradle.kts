@@ -84,7 +84,7 @@ changelog {
 }
 
 detekt {
-    toolVersion = "1.15.0-RC1"
+    toolVersion = "1.19.0"
     parallel = true
 }
 
