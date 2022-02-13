@@ -103,7 +103,7 @@ githook {
 }
 
 jacoco {
-    toolVersion = "0.8.6"
+    toolVersion = "0.8.7"
     reportsDirectory.set(layout.projectDirectory.dir("coverage"))
 }
 
