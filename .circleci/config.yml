@@ -9,14 +9,9 @@ orbs:
 
 jobs:
   build:
-    docker:
+    machine:
       # specify the version you desire here
-      - image: circleci/openjdk:16-jdk-buster
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
+      image: ubuntu-2004:202107-02
 
     working_directory: ~/repo
 
@@ -44,6 +39,15 @@ jobs:
 
       # run tests!
       - run: gradle test
+
+      - run:
+          name: Save test results
+          command: |
+            mkdir -p ~/test-results/junit/
+            find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} ~/test-results/junit/ \;
+          when: always
+      - store_test_results:
+          path: ~/test-results
 
       - codecov/upload:
           file: ./coverage/test/jacocoTestReport.xml

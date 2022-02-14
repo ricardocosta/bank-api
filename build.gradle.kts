@@ -16,9 +16,11 @@ val reactorBlockHoundVersion by extra("1.0.6.RELEASE")
 val reactorTestVersion by extra("3.4.14")
 val springBootVersion by extra("2.6.3")
 val springDocVersion by extra("1.6.6")
+val springJdbcVersion by extra("5.3.15")
 val testContainersVersion by extra("1.16.3")
 
 plugins {
+    id("com.adarshr.test-logger") version "3.0.0"
     id("com.geoffgranum.gradle-conventional-changelog") version "0.3.1"
     id("com.github.ben-manes.versions") version "0.42.0"
     id("com.star-zero.gradle.githook") version "1.2.1"
@@ -46,6 +48,12 @@ repositories {
     maven(url = "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven")
 }
 
+dependencyManagement {
+    imports {
+        mavenBom("org.testcontainers:testcontainers-bom:$testContainersVersion")
+    }
+}
+
 dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:$reactorKotlinVersion")
@@ -61,12 +69,12 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:$springBootVersion")
     implementation("org.springframework.boot:spring-boot-starter-validation:$springBootVersion")
     implementation("org.springframework.boot:spring-boot-starter-webflux:$springBootVersion")
-    implementation(platform("org.testcontainers:testcontainers-bom:$testContainersVersion"))
 
     developmentOnly("org.springframework.boot:spring-boot-devtools:$springBootVersion")
 
     runtimeOnly("io.r2dbc:r2dbc-postgresql:$postgresR2dbcVersion")
     runtimeOnly("org.postgresql:postgresql:$postgresVersion")
+    runtimeOnly("org.springframework:spring-jdbc:$springJdbcVersion")
 
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion")
     testImplementation("io.projectreactor:reactor-test:$reactorTestVersion")
